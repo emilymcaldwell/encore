@@ -694,9 +694,9 @@ footer a {
     <div id="description">{text:Description}</div>
     {/block:ifDescription}
     <nav>
-    <span><a href="/">{text:home link}</a></span>
-    <span><a href="/ask">{text:ask link}</a></span>
-    <span><a href="/archive">{text:archive link}</a></span>
+    {block:ifHomeLink}<span><a href="/">{text:home link}</a></span>{/block:ifHomeLink}
+    {block:ifAskLink}<span><a href="/ask">{text:ask link}</a></span>{/block:ifAskLink}
+    {block:ifArchiveLink}<span><a href="/archive">{text:archive link}</a></span>{/block:ifArchiveLink}
     {block:HasPages}{block:Pages}<span><a href="{URL}">{Label}</a></span>{/block:Pages}{/block:HasPages}
     {block:ifLink1}<span><a href="{text:Link 1 URL}">{text:Link 1}</a></span>{/block:ifLink1}
     {block:ifLink2}<span><a href="{text:Link 2 URL}">{text:Link 2}</a></span>{/block:ifLink2}

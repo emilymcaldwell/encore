@@ -44,7 +44,6 @@
 
 <meta name="text:Font Size" content="13px" />
 <meta name="text:Post Width" content="540px" />
-<meta name="text:Post Padding" content="20px" />
 <meta name="text:Margin" content="200px" />
 <meta name="text:Photoset Gutter" content="2px" />
 
@@ -66,7 +65,7 @@
 <link href="https://static.tumblr.com/0podkko/oDSpg7y88/photosets.css" rel="stylesheet">
 
 <!-- scripts -->
-<link href='https://static.tumblr.com/8pnyeus/sXxofi7lt/outicons.css' rel='stylesheet' type='text/css'>
+<link href='https://static.tumblr.com/m2fiocp/1fbqq9vgi/outicons.css' rel='stylesheet' type='text/css'>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -266,10 +265,10 @@ section {
     width:{text:post width};
     margin:{text:margin} auto;
     box-sizing: border-box;
-    padding:{text:post padding};
+    padding:20px 20px 15px 20px;
     background-color:{color:posts};
     box-shadow:0 2px 5px {color:borders};
-    border-radius:3px;
+    border-radius:5px;
 }
 
 /* header */
@@ -373,6 +372,7 @@ nav span {
 .hold {
     text-align:left;
     background:{color:background};
+    border-radius:5px;
     position:relative;
     display:block;
     min-height:24px;
@@ -473,9 +473,8 @@ nav span {
     justify-content:space-between;
     background:{color:background};
     padding:12px 22px;
-    {block:ifRoundedPosts}
     border-radius:5px;
-    {/block:ifRoundedPosts}
+    font-weight:bold;
     -webkit-transition: all 0.25s ease-in-out;
        -moz-transition: all 0.25s ease-in-out;
          -o-transition: all 0.25s ease-in-out;
@@ -670,8 +669,8 @@ footer a {
 
 .top, .credit { 
     position:fixed; 
-    line-height:1em; 
-    padding:6px 5px 4px; 
+    line-height:1em;
+    padding:4px;
     background-color:{color:posts};
     box-shadow:0 2px 5px {color:borders};
     border-radius:3px;
